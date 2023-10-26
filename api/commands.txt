@@ -4,5 +4,5 @@ py manage.py runserver
 py manage.py createsuperuser 
 pip install coverage
 coverage run --omit='*/venv/*' manage.py test
-coverage html
+coverage html -- creates a new folder named htmlcov, then open up its index.html 1:15
 pip install djangorestframework

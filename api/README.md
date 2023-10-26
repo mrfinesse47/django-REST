@@ -14,3 +14,7 @@ Create venv
 django-admin startproject core .
 
 @ 49:50
+
+#### reference for REST framework
+
+https://www.django-rest-framework.org/

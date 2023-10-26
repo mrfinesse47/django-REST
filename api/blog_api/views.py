@@ -1,19 +1,21 @@
 from rest_framework import generics
 from blog.models import Post
-# from .serializers import PostSerializer
+from .serializers import PostSerializer
 
 
 class PostList(generics.ListCreateAPIView):
     queryset = Post.objects.all()
-    # serializer_class = PostSerializer
+    serializer_class = PostSerializer
 
 
 class PostDetail(generics.RetrieveDestroyAPIView):
     queryset = Post.objects.all()
-    # serializer_class = PostSerializer
+    serializer_class = PostSerializer
 
 
 """ Concrete View Classes
+just tack these onto generics. 
+
 #CreateAPIView
 Used for create-only endpoints.
 #ListAPIView
