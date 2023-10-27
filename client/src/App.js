@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
-// import Posts from './components/Posts';
+import Posts from './components/Posts';
+import PostLoadingComponent from './components/PostLoading';
 
 function App() {
-  // const PostLoading = PostLoadingComponent(Posts);
+  const PostLoading = PostLoadingComponent(Posts);
   const [appState, setAppState] = useState({
     loading: false,
     posts: null,
@@ -21,8 +22,7 @@ function App() {
   return (
     <div className='App'>
       <h1>Latest Posts</h1>
-      {JSON.stringify(appState?.posts)}
-      {/* <PostLoading isLoading={appState.loading} posts={appState.posts} /> */}
+      <PostLoading isLoading={appState.loading} posts={appState.posts} />
     </div>
   );
 }
