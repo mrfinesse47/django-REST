@@ -18,3 +18,7 @@ django-admin startproject core .
 #### reference for REST framework
 
 https://www.django-rest-framework.org/
+
+https://www.youtube.com/watch?v=5AOn0BmSXyE&ab_channel=VeryAcademy
+
+@ 31:11
